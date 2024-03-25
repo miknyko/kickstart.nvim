@@ -1,3 +1,3 @@
 return {
-    'github.com/copilot.vim'
+    'github/copilot.vim'
 }

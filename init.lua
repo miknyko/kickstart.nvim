@@ -322,17 +322,6 @@ require('lazy').setup({
       -- Useful for getting pretty icons, but requires a Nerd Font.
       { 'nvim-tree/nvim-web-devicons', enabled = vim.g.have_nerd_font },
 
-      {
-        'nvim-tree/nvim-tree.lua',
-        version = '*',
-        lazy = false,
-        dependencies = {
-          'nvim-tree/nvim-web-devicons',
-        },
-        config = function()
-          require('nvim-tree').setup {}
-        end,
-      },
     },
     config = function()
       -- Telescope is a fuzzy finder that comes with a lot of different things that
@@ -834,7 +823,7 @@ require('lazy').setup({
       -- There are additional nvim-treesitter modules that you can use to interact
       -- with nvim-treesitter. You should go explore a few and see what interests you:
       --
-      --    - Incremental selection: Included, see `:help nvim-treesitter-incremental-selection-mod`
+      --    - Incremental selection: Included, see `:help nvim-treesitter-incremental-selection-mod
       --    - Show your current context: https://github.com/nvim-treesitter/nvim-treesitter-context
       --    - Treesitter + textobjects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
     end,
@@ -849,16 +838,16 @@ require('lazy').setup({
   --  Here are some example plugins that I've included in the Kickstart repository.
   --  Uncomment any of the lines below to enable them (you will need to restart nvim).
   --
-  -- require 'kickstart.plugins.debug',
-  -- require 'kickstart.plugins.indent_line',
-  -- require 'kickstart.plugins.lint',
+  require 'kickstart.plugins.debug',
+  require 'kickstart.plugins.indent_line',
+  require 'kickstart.plugins.lint',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    This is the easiest way to modularize your config.
   --
   --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
   --    For additional information, see `:help lazy.nvim-lazy.nvim-structuring-your-plugins`
-  -- { import = 'custom.plugins' },
+  { import = 'custom.plugins' },
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the

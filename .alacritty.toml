@@ -1,0 +1,22 @@
+# We use Alacritty's default Linux config directory as our storage location here.
+# 1. mkdir -p ~/.config/alacritty/themes
+# 2. git clone https://github.com/alacritty/alacritty-theme ~/.config/alacritty/themes
+# 3. install nerd font
+
+import = [
+    "~/.config/alacritty/themes/themes/noctis-lux.toml"
+]
+
+[font]
+normal = { family = "Hack Nerd Font", style = "Regular" }
+bold = { family = "Hack Nerd Font", style = "Bold" }
+size = 20
+[window]
+startup_mode = "Maximized"
+title = "CODING CODING CODING"
+decorations="None"
+
+[cursor]
+style = { shape = "Block", blinking = "On" }
+
+

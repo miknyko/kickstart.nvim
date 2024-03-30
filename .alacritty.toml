@@ -10,8 +10,8 @@ import = [
 [font]
 normal = { family = "Hack Nerd Font", style = "Regular" }
 bold = { family = "Hack Nerd Font", style = "Bold" }
-size = 20
-offset = { x = 1, y = 8}
+size = 17 
+offset = { x = 0, y = 6}
 [window]
 startup_mode = "Maximized"
 title = "CODING CODING CODING"

@@ -321,7 +321,6 @@ require('lazy').setup({
 
       -- Useful for getting pretty icons, but requires a Nerd Font.
       { 'nvim-tree/nvim-web-devicons', enabled = vim.g.have_nerd_font },
-
     },
     config = function()
       -- Telescope is a fuzzy finder that comes with a lot of different things that
@@ -617,7 +616,9 @@ require('lazy').setup({
       formatters_by_ft = {
         lua = { 'stylua' },
         -- Conform can also run multiple formatters sequentially
-        python = { 'black' },
+        python = { 'ruff_format' },
+
+        html = { 'htmlbeautifier' },
         --
         -- You can use a sub-list to tell conform to run *until* a formatter
         -- is found.
@@ -739,7 +740,7 @@ require('lazy').setup({
     -- 'folke/tokyonight.nvim',
     'catppuccin/nvim',
     -- 'sainnhe/everforest',
-    name = "catppuccin",
+    name = 'catppuccin',
     priority = 1000, -- Make sure to load this before all the other start plugins.
     init = function()
       -- Load the colorscheme here.
